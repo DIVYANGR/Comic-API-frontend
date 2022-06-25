@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
+.h-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.v-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background: #fff;
+  border: solid black;
+  border-color: black;
+  border-width: 3px 4px 3px 5px;
+  border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+  transform: rotate(2deg);
+}
+
+.boxinner {
+  font-family: "Bangers", cursive;
+  position: absolute;
+  left: 0px;
+  transform: rotate(2deg);
+  padding: 0 5px;
+  background: #ddd;
+  border: 1px solid #222;
+  box-shadow: 3px 3px 0 #222;
+  font-size: 16px;
+}
+
+.title {
+  font-family: "Bangers", cursive;
+  font-size: 25px;
+}
+
+.btn {
+  font-family: "Bangers", cursive;
+  margin: 30px 10px;
+  padding: 4px 10px;
+  font-size: 25px;
+  background-color: #fff;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+
+.image {
+  max-width: 80%;
+  max-height: 100%;
+}
+
+.transcript {
+  border: 0.5px solid gray;
+  width: 80%;
+  margin: 2% auto;
+  padding: 0px 10px;
+  word-wrap: break-word;
+  white-space: pre-line;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+/* 320px — 480px: Mobile devices */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .center {
+    width: 100vw;
+    padding: 0 10px;
+  }
+
+  .box {
+    padding: 30px;
+  }
+
+  .image {
+    max-width: 300px;
+  }
+}
+
+/* 481px — 768px: iPads, Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .center {
+    min-width: 100vw;
+
+    padding: 0 30px;
+  }
+
+  .box {
+    padding: 30px;
+  }
+
+  .image {
+    max-width: 418px;
+  }
+}
+
+/* 769px — 1024px: Small screens, laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .center {
+    min-width: 100vw;
+
+    padding: 0 30px;
+  }
+
+  .box {
+    padding: 30px;
+  }
+}
+
+/* 1025px — 1200px: Desktops, large screens */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .center {
+    min-width: 100vw;
+
+    padding: 0 30px;
+  }
+
+  .box {
+    padding: 30px;
+  }
+}
+
+/* 1201px and more —  Extra large screens, TV */
+@media only screen and (min-width: 1201px) {
+  .center {
+    min-width: 100vw;
+    padding: 0px 30px;
+  }
+
+  .box {
+    padding: 20px;
+  }
+
+  .image {
+    max-width: 800px;
+    height: 800px;
+  }
+}
